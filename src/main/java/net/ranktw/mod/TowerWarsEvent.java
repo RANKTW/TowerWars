@@ -52,7 +52,6 @@ public class TowerWarsEvent {//TOWERWARS
     @SubscribeEvent
     public void RenderGameOverlayEvent(RenderGameOverlayEvent.Text event) {
         if (!(TowerWarsHelper.enabled && inTowerWars()))return;
-//        if (Mc.currentScreen instanceof GuiChest)return;
         GlStateManager.pushMatrix();
         updateStats();
         FontRenderer renderer = Mc.fontRendererObj;
@@ -191,10 +190,6 @@ public class TowerWarsEvent {//TOWERWARS
                 }
                 if (s.contains("Income: ")) income = "§6Income: §r" + format.format(Integer.parseInt(s.replaceAll("[^0-9]", "")));
                 if (s.contains("income"))nextincome = "§7Next income: §r" + getNextIncome(s.replaceAll("[^0-9]", ""));
-
-//                if (teamList.stream().anyMatch(s::contains) && !s.split(": ")[1].equals("0")) {
-//                    team++;
-//                }
             }
         }catch (Exception e){e.printStackTrace();}
     }
