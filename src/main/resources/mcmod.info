@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TowerWarsHelper",
+  "name": "TowerWars Helper Mod",
+  "description": "RANKTW's Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://YT.RankTW.Club",
+  "updateUrl": "",
+  "authorList": ["RANKTW"],
+  "credits": "RANKTW for making this Mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
